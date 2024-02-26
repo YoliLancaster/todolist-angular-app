@@ -6,6 +6,7 @@
       class="add-task"
       placeholder="What the agenda for today?"
       type="text"
+      [(ngModel)]="todoTitle"
       (keyup.enter)="addTodo()"
     />
 
@@ -17,4 +18,7 @@
       ></app-todo-item>
     </div>
   </div>
+</div>
+<div class="git-link">
+  <a href="https://github.com/YoliLancaster/todolist-angular-app">GitHub Source Code</a>
 </div>

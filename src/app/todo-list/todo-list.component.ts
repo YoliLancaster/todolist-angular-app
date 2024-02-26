@@ -9,10 +9,12 @@ import { DataService } from '../shared/data.service';
 })
 export class TodoListComponent implements OnInit {
   todos!: Todo[];
+  todoTitle!: string;
   constructor(private dataService: DataService) {}
 
   ngOnInit(): void {
     this.todos = this.dataService.getAllTodos();
+    this.todoTitle = '';
   }
 
   toggleCompleted(todo: Todo) {
@@ -20,7 +22,15 @@ export class TodoListComponent implements OnInit {
   }
 
   //template driven forms needed
-  // addTodo(){
-  // this.dataService.addTodo()
-  // }
+  addTodo(){
+  if (this.todoTitle.trim().length === 0){
+    return
+  }
+  this.todos.push({
+    text: this.todoTitle,
+    completed: false
+    })
+
+    this.todoTitle = '';
+   }
 }
