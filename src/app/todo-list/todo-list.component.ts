@@ -15,4 +15,8 @@ todos!: Todo[]
   this.todos = this.dataService.getAllTodos()
   }
 
+  toggleCompleted(todo: Todo){
+  todo.completed = !todo.completed;
+  }
+
 }

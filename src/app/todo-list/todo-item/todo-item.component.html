@@ -1,8 +1,8 @@
-<div class="todo-item-wrapper">
+<div class="todo-item-wrapper" >
 
-  <div class="todo-item-content">
+  <div class="todo-item-content" (click)="onTodoClicked()">
   <input type="checkbox">
-  <h3>{{ todo.text }}</h3>
+  <h3 [class.completed]="todo.completed">{{ todo.text }}</h3>
   </div>
 
   <div class="todo-item-category">

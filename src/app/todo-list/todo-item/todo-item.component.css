@@ -9,9 +9,15 @@
 .todo-item-content{
   display: flex;
   gap: 20px;
+  width: 500px;
+  line-height: 1.3;
 }
 
 .todo-item-controls{
   display: flex;
   justify-content: flex-end;
+}
+
+.completed{
+  text-decoration: line-through;
 }
