@@ -1,0 +1,17 @@
+.todo-item-wrapper{
+  display: flex;
+  gap: 2rem;
+  margin: 15px auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.todo-item-content{
+  display: flex;
+  gap: 20px;
+}
+
+.todo-item-controls{
+  display: flex;
+  justify-content: flex-end;
+}
