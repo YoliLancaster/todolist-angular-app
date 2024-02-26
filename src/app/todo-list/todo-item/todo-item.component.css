@@ -1,4 +1,4 @@
-.todo-item-wrapper{
+.todo-item-wrapper {
   display: flex;
   gap: 2rem;
   margin: 15px auto;
@@ -6,18 +6,18 @@
   justify-content: space-between;
 }
 
-.todo-item-content{
+.todo-item-content {
   display: flex;
   gap: 20px;
   width: 500px;
   line-height: 1.3;
 }
 
-.todo-item-controls{
+.todo-item-controls {
   display: flex;
   justify-content: flex-end;
 }
 
-.completed{
+.completed {
   text-decoration: line-through;
 }

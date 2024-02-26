@@ -1,15 +1,20 @@
 <div class="container">
-  <h1>
-    ToDo List
-  </h1>
+  <h1>ToDo List</h1>
 
-<div class="list-wrapper">
-  <input class="add-task" placeholder="What the agenda for today?" type="text">
+  <div class="list-wrapper">
+    <input
+      class="add-task"
+      placeholder="What the agenda for today?"
+      type="text"
+      (keyup.enter)="addTodo()"
+    />
 
-  <div class="item-list">
-
-    <app-todo-item *ngFor="let todo of todos" [todo]="todo" (toDoClicked)="toggleCompleted(todo)"></app-todo-item>
-
+    <div class="item-list">
+      <app-todo-item
+        *ngFor="let todo of todos"
+        [todo]="todo"
+        (toDoClicked)="toggleCompleted(todo)"
+      ></app-todo-item>
+    </div>
   </div>
-</div>
 </div>
